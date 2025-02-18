@@ -18,11 +18,11 @@ public class NaveRepositorio {
 
     }
 
-    public void insertarTripulante(Nave nave) {
+    public void insertarNave(Nave nave) {
         collection.insertOne(nave);
     }
 
-    public List<Nave> obtenerTodosLosTripulantes() {
+    public List<Nave> obtenerTodasLasNaves() {
         List<Nave> naves = new ArrayList<>();
         MongoCursor<Nave> cursor = collection.find().iterator();
 
